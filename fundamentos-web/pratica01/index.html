@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/css/style.css"
+      media="screen"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Minha agenda de contatos</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="/assets/img/agenda-de-contato.png"
+        alt="Ícone Agenda de Contato"
+      />
+      <h1>Minha agenda de contatos</h1>
+    </header>
+
+    <hr />
+
+    <main>
+      <p>Adicionar novo contato</p>
+
+      <form>
+        <label>Nome:</label>
+        <input placeholder="Digite o nome do contato" type="text" />
+
+        <label>Telefone:</label>
+        <input placeholder="Digite o telefone com DDD" type="text" />
+
+        <label>E-mail:</label>
+        <input placeholder="Digite o email do contato" type="text" />
+
+        <label>Interesses:</label>
+        <textarea placeholder="Digite os interesses por vírgula"></textarea>
+
+        <button>Cadastrar</button>
+      </form>
+
+      <hr />
+
+      <section class="tabela">
+        <p>Meus Contatos</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Telefone</th>
+              <th>E-mail</th>
+              <th>Interesses</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Joãozinho</td>
+              <td>912345678</td>
+              <td>
+                <a href="mailto:joazinho@gmail.com">joazinho@gmail.com</a>
+              </td>
+              <td>
+                <ul>
+                  <li>Futebol</li>
+                  <li>Video-game</li>
+                  <li>Praia</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Maria</td>
+              <td>987654321</td>
+              <td><a href="mailto:maria@gmail.com">maria@gmail.com</a></td>
+              <td>
+                <ul>
+                  <li>Barbie</li>
+                  <li>Amizades</li>
+                  <li>Baladinha</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
