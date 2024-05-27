@@ -94,8 +94,20 @@ td {
   border: 1px solid rgb(160 160 160);
 }
 
+td button {
+  margin: 0.3rem;
+}
+
 .hidden {
   display: none;
+}
+
+@media (hover: none) {
+  button:hover {
+    background-color: initial;
+    color: inherit;
+    border: 1px solid rgb(160 160 160);
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -122,5 +134,9 @@ td {
   }
   button {
     grid-column: span 1;
+  }
+  button:hover {
+    background-color: none;
+    color: none;
   }
 }
