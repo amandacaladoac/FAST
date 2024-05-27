@@ -65,6 +65,8 @@ textarea {
 
 button {
   padding: 12px 10px;
+  background-color: #f0f0f0;
+  color: #4678f3;
   border: 1px solid rgb(160 160 160);
   border-radius: 5px;
   cursor: pointer;
