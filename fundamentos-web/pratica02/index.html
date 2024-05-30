@@ -1,20 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <title>Produtos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/style.css"
+      media="screen"
+    />
   </head>
+
   <body>
-    <h1>Minha Todo List</h1>
-
     <main>
-      <input type="text" id="inputText" />
-      <button onclick="adicionarItem()">Salvar</button>
+      <header>
+        <nav class="nav">
+          <p class="page-name">OLD SHOP</p>
+
+          <ul>
+            <li><a href="">Relíquias</a></li>
+            <li><a href="">Velharias</a></li>
+            <li><a href="">Nostalgia</a></li>
+          </ul>
+
+          <div class="pesquisa">
+            <input type="text" placeholder="Pesquisar" />
+            <div class="carrinho">
+              <img src="./assets/img/shop-bag.png" />
+              <p id="quantidade">1</p>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="produto">
+        <div class="produtos">
+          <div class="img-principal">
+            <img src="./assets/img/produto-1.png" />
+          </div>
+
+          <div class="outras-imagens">
+            <div class="imgs">
+              <img src="./assets/img/produto-2.png" />
+            </div>
+            <div class="imgs">
+              <img src="./assets/img/produto-3.png" />
+            </div>
+            <div class="imgs">
+              <img src="./assets/img/produto-3.png" />
+            </div>
+          </div>
+        </div>
+
+        <div class="informacoes-produto">
+          <p class="nome-produto">Fita VHS Basf T-120 Extra Quality</p>
+
+          <p class="vendedor">POR <span>OLD ELETRÔNICOS</span></p>
+
+          <div class="valor">
+            <p class="preco">R$ 40</p>
+            <p class="desconto">
+              Desconto 10% <span class="destaque">no PIX</span>
+            </p>
+          </div>
+
+          <p class="descricao">
+            Se você está em busca de uma fita VHS de alta qualidade, a FITA VHS
+            BASF T-120 Extra Quality é a escolha ideal para você.
+          </p>
+
+          <div class="comprar">
+            <div class="quantidade">
+              <span>QTD</span>
+              <input type="number" />
+            </div>
+            <button type="submit">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </section>
     </main>
-
-    <ul id="todoList"></ul>
-
-    <script src="assets/js/script.js"></script>
   </body>
 </html>
